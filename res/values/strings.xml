@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OriginalASO_2014_001</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="top_button">OK</string>
+
+    <string name="chukichi_text">中吉画面</string>
+    <string name="daikichi_text">大吉画面</string>
+    <string name="kyo_text">凶画面</string>
+    <string name="daikyo_text">大凶画面</string>
+</resources>
