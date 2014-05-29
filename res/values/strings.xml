@@ -6,9 +6,10 @@
     <string name="hello_world">Hello world!</string>
 
     <string name="top_button">OK</string>
+    <string name="top_text">おみくじアプリ</string>
 
-    <string name="chukichi_text">中吉画面</string>
-    <string name="daikichi_text">大吉画面</string>
-    <string name="kyo_text">凶画面</string>
-    <string name="daikyo_text">大凶画面</string>
+    <string name="chukichi_text">中吉</string>
+    <string name="daikichi_text">大吉</string>
+    <string name="kyo_text">凶</string>
+    <string name="daikyo_text">大凶</string>
 </resources>
