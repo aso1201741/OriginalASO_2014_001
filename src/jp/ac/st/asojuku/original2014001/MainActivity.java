@@ -19,30 +19,24 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		case R.id.btnOK:
 			Random rnd = new Random();
 	        int ran = rnd.nextInt(4);
-	        Intent vIntent;
+	        Intent vIntent = null;
 	        switch (ran){
 	        case 0:
 	        	vIntent = new Intent(this,Daikichi.class);
-	        	vIntent.putExtra("NAME", name);
-	        	startActivity(vIntent);
 	        	break;
 	        case 1:
 	        	vIntent = new Intent(this,Chukichi.class);
-	        	vIntent.putExtra("NAME", name);
-	        	startActivity(vIntent);
 	        	break;
 	        case 2:
 	        	vIntent = new Intent(this,Kyo.class);
-	        	vIntent.putExtra("NAME", name);
-	        	startActivity(vIntent);
 	        	break;
 	        case 3:
 	        	vIntent = new Intent(this,Daikyo.class);
-	        	vIntent.putExtra("NAME", name);
-	        	startActivity(vIntent);
 	        	break;
 	        }
 
+        	vIntent.putExtra("NAME", name);
+        	startActivity(vIntent);
 			break;
 		}
 	}

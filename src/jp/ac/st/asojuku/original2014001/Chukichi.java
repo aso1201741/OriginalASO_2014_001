@@ -13,7 +13,12 @@ public class Chukichi extends Activity{
 		setContentView(R.layout.chukichi_activity);
 		Intent vIntent = getIntent();
 		String name = vIntent.getStringExtra("NAME");
-		String res = name + "さんの運勢は中吉です。\nよかったね！";
+		String res = null;
+		if(name.equals("")){
+			res = "あなたの運勢は中吉です。\nよかったね！";
+		}else{
+			res = name + "さんの運勢は中吉です。\nよかったね！";
+		}
 		((TextView)findViewById(R.id.chukichi_res)).setText(res);
 	}
 

@@ -13,7 +13,12 @@ public class Kyo extends Activity{
 		setContentView(R.layout.kyo_activity);
 		Intent vIntent = getIntent();
 		String name = vIntent.getStringExtra("NAME");
-		String res = name + "さんの運勢は凶です。\n残念！";
+		String res = null;
+		if(name.equals("")){
+			res = "あなたの運勢は凶です。\n残念！";
+		}else{
+			res = name + "さんの運勢は凶です。\n残念！";
+		}
 		((TextView)findViewById(R.id.kyo_res)).setText(res);
 	}
 
